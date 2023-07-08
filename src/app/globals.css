@@ -16,12 +16,105 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h1 {
+  font-size: 56px;
+  text-transform: uppercase;
+  line-height: 58px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.43px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+p {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+pre {
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.overline-text {
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.sub-title {
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.container-one-desktop {
+  background-image: url("../../public/home/desktop/pattern-circles-desktop.svg");
+  background-repeat: no-repeat;
+}
+
+.item-1 {
+  flex-direction: row-reverse;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 800ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
 }
