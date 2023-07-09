@@ -90,8 +90,6 @@ export function CartContextProvider({ children }) {
     setCart([])
   }
 
-  console.log(cart)
-
   const contextValue = {
     cart,
     clearCart,

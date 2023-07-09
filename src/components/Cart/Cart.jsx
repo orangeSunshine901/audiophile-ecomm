@@ -2,6 +2,7 @@ import Image from "next/image"
 import React, { useContext, useState } from "react"
 import { data } from "@/app/category/[products]/data"
 import { CartContext } from "@/context/CartContext"
+import Link from "next/link"
 
 export default function Cart() {
   const { cart, subtractQuantity, addQuantity, totalPriceCalc, clearCart } =
@@ -59,12 +60,14 @@ export default function Cart() {
         ))}
       </ul>
       <div className="flex justify-between">
-        <p>Total</p>
+        <p className="uppercase text-black/50">Total</p>
         <h6>${cartTotal}</h6>
       </div>
-      <button className="bg-dark-salmon text-white font-bold uppercase w-full h-[48px] text-[13px] tracking-[1px]">
-        Checkout
-      </button>
+      <Link href={"/checkout"}>
+        <button className="bg-dark-salmon text-white font-bold uppercase w-full h-[48px] text-[13px] tracking-[1px]">
+          Checkout
+        </button>
+      </Link>
     </div>
   )
 }
