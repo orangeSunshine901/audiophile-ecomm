@@ -179,7 +179,7 @@ export const data = [
   {
     id: 3,
     slug: "xx99-mark-one-headphones",
-    name: "XX99 Mark I Headphones",
+    name: "XX99 MK I Headphones",
     image: {
       mobile: "/product-xx99-mark-one-headphones/mobile/image-product.jpg",
       tablet: "/product-xx99-mark-one-headphones/tablet/image-product.jpg",
@@ -271,7 +271,7 @@ export const data = [
   {
     id: 4,
     slug: "xx99-mark-two-headphones",
-    name: "XX99 Mark II Headphones",
+    name: "XX99 MK II Headphones",
     image: {
       mobile: "/product-xx99-mark-two-headphones/mobile/image-product.jpg",
       tablet: "/product-xx99-mark-two-headphones/tablet/image-product.jpg",

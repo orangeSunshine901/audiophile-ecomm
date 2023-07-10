@@ -60,7 +60,7 @@ export default function product({ params }) {
             <p className="pt-3 pb-8 text-black/50 w-full">
               {productItem[0].description}
             </p>
-            <h6 className="pb-8">$ {productItem[0].price}</h6>
+            <h6 className="pb-8">$ {productItem[0].price.toLocaleString()}</h6>
             <div className="flex gap-x-4">
               <div className="flex w-[120px] h-[48px] flex-row bg-grey">
                 <button

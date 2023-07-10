@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react"
 import Link from "next/link"
-import Modal from "./Modal"
+import Modal from "../Modal/Modal"
 
 export default function Header() {
   const [showModal, setShowModal] = useState(false)
@@ -13,12 +13,8 @@ export default function Header() {
   return (
     <>
       {showModal ? (
-        <Modal showModal={showModal} modelState={modalShow}>
-          <h1>Hello</h1>
-        </Modal>
-      ) : (
-        <div></div>
-      )}
+        <Modal showModal={showModal} modelState={modalShow} />
+      ) : null}
       <header className="m-auto max-w-[1110px] border-b z-10 border-white/20 h-[96px] absolute left-0 right-0">
         <nav className="flex flex-row justify-between relative top-[32px] left-0 right-0 m-auto">
           {/*Logo */}

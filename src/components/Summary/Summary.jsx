@@ -29,7 +29,9 @@ export default function Summary() {
             </div>
             <div className="flex flex-1 items-start flex-col">
               <h6 className="text-[15px] tracking-normal">{item.name}</h6>
-              <p className="font-bold text-black/50">${item.price}</p>
+              <p className="font-bold text-black/50">
+                ${item.price.toLocaleString()}
+              </p>
             </div>
             <div className="h-[49px]">
               <p className="text-black/50 font-bold">x{item.quantity}</p>
@@ -42,7 +44,7 @@ export default function Summary() {
       <div className="flex flex-col gap-y-3">
         <div className="flex justify-between">
           <p className="uppercase text-black/50">Total</p>
-          <h6>${cartTotal}</h6>
+          <h6>${cartTotal.toLocaleString()}</h6>
         </div>
         <div className="flex justify-between">
           <p className="uppercase text-black/50">Shipping</p>
@@ -50,12 +52,12 @@ export default function Summary() {
         </div>
         <div className="flex justify-between">
           <p className="uppercase text-black/50">VAT (Included)</p>
-          <h6>${(cartTotal * 20) / 100}</h6>
+          <h6>${Math.floor((cartTotal * 20) / 100).toLocaleString()}</h6>
         </div>
         <div className="flex justify-between mt-4">
           <p className="uppercase text-black/50">Grand Total</p>
           <h6 className="text-dark-salmon">
-            ${cartTotal != 0 ? cartTotal + 50 : "0"}
+            ${cartTotal != 0 ? (cartTotal + 50).toLocaleString() : "0"}
           </h6>
         </div>
       </div>
