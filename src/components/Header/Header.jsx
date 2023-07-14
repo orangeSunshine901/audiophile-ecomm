@@ -2,23 +2,60 @@
 import { useState } from "react"
 import Link from "next/link"
 import Modal from "../Modal/Modal"
+import { usePathname } from "next/navigation"
+import { Squash as Hamburger } from "hamburger-react"
+import { AnimatePresence } from "framer-motion"
+import Dropdown from "../Dropdown/Dropdown"
 
 export default function Header() {
+  const pathName = usePathname()
   const [showModal, setShowModal] = useState(false)
+  const [dropdown, setDropdown] = useState(false)
 
+  // Cart modal
   const modalShow = () => {
     setShowModal(false)
   }
 
+  // Tablet and mobile Hamburger dropdown
+  const dropDownClose = () => {
+    clearAllBodyScrollLocks()
+    setDropdown(false)
+  }
+
+  dropdown
+    ? (document.body.style.overflow = "hidden")
+    : (document.body.style.overflow = "auto")
+
   return (
-    <>
+    <div className="relative">
+      <AnimatePresence initial={false} mode="wait" onExitComplete={() => null}>
+        {dropdown && (
+          <Dropdown dropDownOpen={dropdown} handleClose={dropDownClose} />
+        )}
+      </AnimatePresence>
       {showModal ? (
         <Modal showModal={showModal} modelState={modalShow} />
       ) : null}
-      <header className="m-auto max-w-[1110px] border-b z-10 border-white/20 h-[96px] absolute left-0 right-0">
-        <nav className="flex flex-row justify-between relative top-[32px] left-0 right-0 m-auto">
+      <header
+        className={`m-auto lg:max-w-[1110px] md:max-w-[689px] sm:max-w-[100vw] border-b z-10 border-white/20 lg:h-[96px] md:h-[89px] sm:h-[89px] absolute left-0 right-0`}
+      >
+        <nav className="flex flex-row justify-between md:items-center sm:py-[32px] sm:px-[32px] sm:items-center relative lg:top-[32px] md:top-[22px] sm:top-[22px]left-0 right-0 m-auto">
+          {/* Tablet and Mobile Dropdown */}
+          <div className="lg:hidden md:block">
+            <Hamburger
+              color="white"
+              size={18}
+              toggled={dropdown}
+              toggle={setDropdown}
+              className="ml-[-80px]"
+            />
+          </div>
           {/*Logo */}
-          <div>
+          <Link
+            href="/"
+            className="lg:w-fit md:w-full lg:pl-0 md:pl-8 sm:pl-0 sm:h-fit"
+          >
             <svg
               width="143"
               height="25"
@@ -33,19 +70,31 @@ export default function Header() {
                 fill="white"
               />
             </svg>
-          </div>
+          </Link>
           {/*Nav Links */}
-          <div className="flex text-white flex-row shrink gap-x-[36px] justify-center">
-            <Link className="sub-title" href={"/"}>
+          <div className="text-white flex-row shrink gap-x-[36px] justify-center lg:flex md:hidden sm:hidden">
+            <Link
+              className="sub-title hover:text-dark-salmon ease-in-out duration-300"
+              href={"/"}
+            >
               Home
             </Link>
-            <Link className="sub-title" href={"/category/headphones"}>
+            <Link
+              className="sub-title hover:text-dark-salmon ease-in-out duration-300"
+              href={"/category/headphones"}
+            >
               Headphones
             </Link>
-            <Link className="sub-title" href={"/category/speakers"}>
+            <Link
+              className="sub-title hover:text-dark-salmon ease-in-out duration-300"
+              href={"/category/speakers"}
+            >
               Speakers
             </Link>
-            <Link className="sub-title" href={"/category/earphones"}>
+            <Link
+              className="sub-title hover:text-dark-salmon ease-in-out duration-300"
+              href={"/category/earphones"}
+            >
               Earphones
             </Link>
           </div>
@@ -55,6 +104,8 @@ export default function Header() {
               onClick={() =>
                 !showModal ? setShowModal(true) : setShowModal(false)
               }
+              disabled={pathName == "/checkout"}
+              className="disabled:opacity-30"
             >
               <svg
                 width="24"
@@ -74,6 +125,6 @@ export default function Header() {
           </div>
         </nav>
       </header>
-    </>
+    </div>
   )
 }

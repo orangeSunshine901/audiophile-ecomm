@@ -3,12 +3,10 @@
 import React, { useState } from "react"
 import { useFormik } from "formik"
 import * as Yup from "yup"
-import { useRouter } from "next/navigation"
-import { useLocalStorage } from "react-use"
 import ThankYouModal from "../Modal/ThankYouModal"
 
 export default function Form() {
-  const [showModal, setShowModal] = useState(true)
+  const [showModal, setShowModal] = useState(false)
 
   const phoneRegExp =
     /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
@@ -290,9 +288,11 @@ export default function Form() {
           </div>
           <div className="flex-1">
             <label
-              className={
-                "text-xs font-bold block mb-2 block rounded-md border w-full h-[56px] border-grey bg-white flex items-center px-4 gap-x-3 hover:border-dark-salmon"
-              }
+              className={`text-xs font-bold block mb-2 block rounded-md border w-full h-[56px] border-grey bg-white flex items-center px-4 gap-x-3 hover:border-dark-salmon ${
+                formik.errors.payment &&
+                formik.touched.payment &&
+                `border-red-700 border-2`
+              }`}
             >
               <input
                 name="payment"
@@ -304,9 +304,11 @@ export default function Form() {
               e-Money
             </label>
             <label
-              className={
-                "text-xs font-bold block mb-2 block rounded-md border w-full h-[56px] border-grey bg-white flex items-center px-4 gap-x-3 hover:border-dark-salmon"
-              }
+              className={`text-xs font-bold block mb-2 block rounded-md border w-full h-[56px] border-grey bg-white flex items-center px-4 gap-x-3 hover:border-dark-salmon ${
+                formik.errors.payment &&
+                formik.touched.payment &&
+                `border-red-700 border-2`
+              }`}
             >
               <input
                 name="payment"

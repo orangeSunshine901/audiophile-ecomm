@@ -12,6 +12,9 @@ export const theme = {
       salmon: "#fbaf85",
       grey: "#F1F1F1",
     },
+    screens: {
+      sm: { max: "639px" },
+    },
   },
 }
 export const plugins = []

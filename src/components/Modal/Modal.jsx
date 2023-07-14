@@ -22,9 +22,7 @@ const CartModal = ({ showModal, modelState }) => {
           content: {
             position: "absolute",
             height: "488px",
-            width: "377px",
             top: "110px",
-            left: "64vw",
             bottom: "0",
             border: "1px solid #ccc",
             background: "white",
@@ -43,6 +41,7 @@ const CartModal = ({ showModal, modelState }) => {
         id="modal"
         onRequestClose={() => modelState()}
         shouldCloseOnOverlayClick={true}
+        className={"modalContent"}
       >
         <Cart closeCart={modelState} />
       </Modal>

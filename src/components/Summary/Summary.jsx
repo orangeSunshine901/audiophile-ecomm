@@ -1,6 +1,7 @@
 import Image from "next/image"
 import React, { useContext } from "react"
 import { CartContext } from "@/context/CartContext"
+import { motion } from "framer-motion"
 
 export default function Summary() {
   const { cart, totalPriceCalc } = useContext(CartContext)
@@ -61,14 +62,16 @@ export default function Summary() {
           </h6>
         </div>
       </div>
-      <button
-        className="mt-8 bg-dark-salmon text-white font-bold uppercase w-full h-[48px] text-[13px] tracking-[1px] disabled:opacity-50"
+      <motion.button
+        className="mt-8 bg-dark-salmon text-white font-bold uppercase w-full h-[48px] text-[13px] tracking-[1px] disabled:opacity-50 hover:bg-salmon ease-in-out duration-300"
         form="checkout-form"
         type="submit"
         disabled={cart.length == 0}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
       >
         Continue & Pay
-      </button>
+      </motion.button>
     </div>
   )
 }

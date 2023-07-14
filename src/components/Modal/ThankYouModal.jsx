@@ -6,6 +6,7 @@ import Link from "next/link"
 import { CartContext } from "@/context/CartContext"
 import { useContext, useState } from "react"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 const ThankYouModal = ({ showModal, modelState }) => {
   const [seeMore, setSeeMore] = useState(false)
@@ -52,7 +53,6 @@ const ThankYouModal = ({ showModal, modelState }) => {
           onRequestClose={!showModal}
           contentLabel="Cart"
           id="modal"
-          onRequestClose={() => modelState()}
         >
           <div className="flex flex-col p-[18px] gap-y-6">
             <div>
@@ -167,14 +167,16 @@ const ThankYouModal = ({ showModal, modelState }) => {
               </div>
             </div>
             <Link href="/">
-              <button
-                className="mt-4 bg-dark-salmon text-white font-bold uppercase w-full h-[48px] text-[13px] tracking-[1px] disabled:opacity-50"
+              <motion.button
+                className="mt-4 bg-dark-salmon text-white font-bold uppercase w-full h-[48px] text-[13px] tracking-[1px] disabled:opacity-50 hover:bg-salmon ease-in-out duration-300"
                 form="checkout-form"
                 type="submit"
                 onClick={() => clearCart()}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 Back to home
-              </button>
+              </motion.button>
             </Link>
           </div>
         </Modal>

@@ -8,18 +8,17 @@ export default function ProductCard({ product, index }) {
   return (
     <div>
       <div
-        className={`item-${index} m-auto w-[100%] max-w-[1110px] flex justify-between items-center gap-x-10`}
+        className={`item-${index} m-auto w-[100%] lg:max-w-[1110px] md:max-w-[689px] flex justify-between items-center gap-x-10 gap-y-10`}
       >
-        <div className="relative rounded-md">
+        <div className="relative rounded-md lg:h-[560px] md:h-[352px] lg:w-[540px] md:w-full bg-grey">
           <Image
             src={`${product.image.desktop}`}
-            width={540}
-            height={560}
             alt={product.name}
-            className="object-cover rounded-md"
+            className="lg:object-cover md:object-contain rounded-md m-auto"
+            fill={true}
           />
         </div>
-        <div className="flex flex-col gap-y-2">
+        <div className="flex flex-col gap-y-2 lg:items-start md:items-center lg:text-left md:text-center">
           {product.new && (
             <p className="overline-text text-dark-salmon w-1/2">New Product</p>
           )}
@@ -28,7 +27,9 @@ export default function ProductCard({ product, index }) {
             {product.description}
           </p>
           <ButtonOne
-            color={"bg-dark-salmon text-white"}
+            color={
+              "bg-dark-salmon text-white hover:bg-salmon ease-in-out duration-300"
+            }
             link={`category/${product.category}/${product.slug}`}
           />
         </div>

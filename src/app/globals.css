@@ -94,26 +94,142 @@ pre {
   font-weight: 700;
 }
 
-.container-one-desktop {
-  background-image: url("../../public/home/desktop/pattern-circles-desktop.svg");
-  background-repeat: no-repeat;
+@media screen and (min-width: 768px) {
+  .container-one-desktop {
+    background-image: url("../../public/home/tablet/pattern-circles.svg");
+    background-repeat: no-repeat;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+
+  .overline-text {
+    font-size: 12px;
+  }
+
+  .item-0 {
+    flex-direction: column;
+  }
+
+  .item-1 {
+    flex-direction: column;
+  }
+
+  .item-2 {
+    flex-direction: column;
+  }
+
+  .modalContent {
+    left: 45vw;
+    width: 377px;
+  }
 }
 
-.item-1 {
-  flex-direction: row-reverse;
+@media screen and (min-width: 1280px) {
+  .item-0 {
+    flex-direction: row;
+  }
+
+  .item-1 {
+    flex-direction: row-reverse;
+  }
+
+  .item-2 {
+    flex-direction: row;
+  }
+  .container-one-desktop {
+    background-image: url("../../public/home/desktop/pattern-circles-desktop.svg");
+    background-repeat: no-repeat;
+  }
+
+  .modalContent {
+    left: 62vw;
+    width: 377px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  /* body {
+    overflow: hidden;
+  } */
+  h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  h6 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .container-one-desktop {
+    background-image: url("../../public/home/mobile/pattern-circles.svg");
+    background-repeat: no-repeat;
+  }
+
+  .m-dropdown-cards div {
+    max-height: 180px;
+    row-gap: 2px;
+  }
+
+  /* Mobile dropdown cards */
+
+  .m-dropdown-cards img {
+    height: 150px;
+  }
+
+  .modalContent {
+    left: 25px;
+    width: 325px;
+  }
 }
 
 .ReactModal__Overlay {
   opacity: 0;
-  transition: opacity 800ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+  left: 64vw;
+  position: "fixed";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: "20";
+  cursor: "pointer";
 }
 
 .ReactModal__Overlay--after-open {
   opacity: 1;
+  left: 64vw;
 }
 
 .ReactModal__Overlay--before-close {
   opacity: 0;
+  left: 64vw;
 }
 
 .ReactModal__Body--open {
@@ -148,4 +264,46 @@ input[type="radio"]::before {
 
 input[type="radio"]:checked::before {
   transform: scale(1);
+}
+
+.fb-icon {
+  background-color: white;
+  -webkit-mask: url("../../public/shared/desktop/icon-facebook.svg") no-repeat
+    center;
+  mask: url("../../public/shared/desktop/icon-facebook.svg") no-repeat center;
+}
+
+.fb-icon:hover {
+  background-color: #d87d4a;
+  -webkit-mask: url("../../public/shared/desktop/icon-facebook.svg") no-repeat
+    center;
+  mask: url("../../public/shared/desktop/icon-facebook.svg") no-repeat center;
+}
+
+.twitter-icon {
+  background-color: white;
+  -webkit-mask: url("../../public/shared/desktop/icon-twitter.svg") no-repeat
+    center;
+  mask: url("../../public/shared/desktop/icon-twitter.svg") no-repeat center;
+}
+
+.twitter-icon:hover {
+  background-color: #d87d4a;
+  -webkit-mask: url("../../public/shared/desktop/icon-twitter.svg") no-repeat
+    center;
+  mask: url("../../public/shared/desktop/icon-twitter.svg") no-repeat center;
+}
+
+.insta-icon {
+  background-color: white;
+  -webkit-mask: url("../../public/shared/desktop/icon-instagram.svg") no-repeat
+    center;
+  mask: url("../../public/shared/desktop/icon-instagram.svg") no-repeat center;
+}
+
+.insta-icon:hover {
+  background-color: #d87d4a;
+  -webkit-mask: url("../../public/shared/desktop/icon-instagram.svg") no-repeat
+    center;
+  mask: url("../../public/shared/desktop/icon-instagram.svg") no-repeat center;
 }

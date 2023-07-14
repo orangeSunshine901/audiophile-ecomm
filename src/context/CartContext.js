@@ -78,6 +78,7 @@ export function CartContextProvider({ children }) {
     })
     setCart(sameProduct)
   }
+
   const totalPriceCalc = () => {
     let total = 0
     for (let i = 0; i < cart.length; i++) {
@@ -90,6 +91,11 @@ export function CartContextProvider({ children }) {
     setCart([])
   }
 
+  const removeQuantity = (id) => {
+    setCart(cart.filter((product) => product.id !== id))
+    // // setCart(updatedCart)
+  }
+
   const contextValue = {
     cart,
     clearCart,
@@ -99,7 +105,10 @@ export function CartContextProvider({ children }) {
     subtractQuantity,
     addQuantity,
     totalPriceCalc,
+    removeQuantity,
   }
+
+  // console.log(cart)
 
   return (
     <CartContext.Provider value={contextValue}>{children}</CartContext.Provider>
