@@ -33,7 +33,7 @@ const ThankYouModal = ({ showModal, modelState }) => {
               position: "absolute",
               maxHeight: "713px",
               height: "fit-content",
-              width: "540px",
+              width: "clamp(5%, 540px, 90%)",
               top: "110px",
               left: "50%",
               transform: "translateX(-50%)",
@@ -52,7 +52,7 @@ const ThankYouModal = ({ showModal, modelState }) => {
           isOpen={showModal}
           onRequestClose={!showModal}
           contentLabel="Cart"
-          id="modal"
+          id="thankyou-modal"
         >
           <div className="flex flex-col p-[18px] gap-y-6">
             <div>
@@ -81,8 +81,8 @@ const ThankYouModal = ({ showModal, modelState }) => {
                 You will receive an email confirmation shortly.
               </p>
             </div>
-            <div className="w-full h-fit min-h-[140px] bg-grey rounded-md flex flex-row justify-between">
-              <div className="flex flex-col p-[24px] w-[248px]">
+            <div className="w-full h-fit min-h-[140px] sm:min-h-[140px] bg-grey rounded-md flex flex-row justify-between sm:flex-col">
+              <div className="flex flex-col p-[24px] w-[248px] sm:w-full">
                 <div className="flex min-h-[60%] justify-between gap-y-4 mb-4 flex-col">
                   {!seeMore ? (
                     <div className="flex justify-between w-full">
@@ -157,11 +157,11 @@ const ThankYouModal = ({ showModal, modelState }) => {
                   )}
                 </div>
               </div>
-              <div className="relative w-[198px] bg-black rounded-r-md flex flex-col justify-end items-center gap-y-1">
+              <div className="relative w-[198px] sm:w-full sm:h-[100px] bg-black rounded-r-md sm:rounded-b-md sm:rounded-t-none flex flex-col sm:justify-center justify-end items-center sm:items-start sm:pl-[24px] gap-y-1">
                 <p className="text-[15px] text-white/50 font-medium uppercase w-[70%]">
                   Grand Total
                 </p>
-                <p className="text-[18px] text-white font-bold uppercase w-[70%] pb-[25%]">
+                <p className="text-[18px] text-white font-bold uppercase w-[70%] pb-[25%] sm:pb-0">
                   ${cartTotal.toLocaleString()}
                 </p>
               </div>

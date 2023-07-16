@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import Modal from "../Modal/Modal"
 import { usePathname } from "next/navigation"
@@ -18,14 +18,22 @@ export default function Header() {
   }
 
   // Tablet and mobile Hamburger dropdown
+
+  // Click on Overlay
   const dropDownClose = () => {
-    clearAllBodyScrollLocks()
+    bodyScrollUnlock()
     setDropdown(false)
   }
 
-  dropdown
-    ? (document.body.style.overflow = "hidden")
-    : (document.body.style.overflow = "auto")
+  const bodyScrollUnlock = () => {
+    document.body.style.overflow = "auto"
+  }
+
+  useEffect(() => {
+    dropdown || showModal
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto")
+  })
 
   return (
     <div className="relative">
@@ -38,11 +46,11 @@ export default function Header() {
         <Modal showModal={showModal} modelState={modalShow} />
       ) : null}
       <header
-        className={`m-auto lg:max-w-[1110px] md:max-w-[689px] sm:max-w-[100vw] border-b z-10 border-white/20 lg:h-[96px] md:h-[89px] sm:h-[89px] absolute left-0 right-0`}
+        className={`m-auto lg:max-w-[1110px] md:max-w-[689px] sm:max-w-[327px] border-b z-10 border-white/20 lg:h-[96px] md:h-[89px] sm:h-[89px] absolute left-0 right-0`}
       >
-        <nav className="flex flex-row justify-between md:items-center sm:py-[32px] sm:px-[32px] sm:items-center relative lg:top-[32px] md:top-[22px] sm:top-[22px]left-0 right-0 m-auto">
+        <nav className="flex flex-row justify-between md:items-center sm:py-[32px] sm:items-center relative lg:top-[32px] md:top-[22px] sm:top-0 left-0 right-0 m-auto">
           {/* Tablet and Mobile Dropdown */}
-          <div className="lg:hidden md:block">
+          <div className="lg:hidden md:block md:ml-[-15px] sm:ml-[-15px]">
             <Hamburger
               color="white"
               size={18}

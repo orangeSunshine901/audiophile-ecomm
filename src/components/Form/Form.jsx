@@ -46,16 +46,15 @@ export default function Form() {
     }),
 
     // Submit form
-    onSubmit: (values) => {
+    onSubmit: () => {
       setShowModal(true)
+      document.body.style.overflow = "hidden"
     },
   })
 
   const modalShow = () => {
     setShowModal(false)
   }
-
-  console.log(formik.errors)
 
   return (
     <form id="checkout-form" onSubmit={formik.handleSubmit}>
@@ -269,9 +268,9 @@ export default function Form() {
           </div>
         </div>
       </div>
-      <div className="pb-[53px]">
+      <div className="pb-[53px] sm:w-full">
         <p className="sub-title text-dark-salmon pb-3">Payment Details</p>
-        <div className="flex w-full h-[128px] mb-5">
+        <div className="flex w-full h-[128px] mb-5 sm:flex-col">
           <div className="flex-1">
             <p
               className={`text-xs font-bold ${
@@ -322,7 +321,7 @@ export default function Form() {
           </div>
         </div>
         {formik.values.payment == "eMoney" && (
-          <div className="flex flex-wrap w-full justify-between gap-y-6">
+          <div className="flex flex-wrap sm:pt-8 w-full justify-between gap-y-6">
             <div className="w-[309px]">
               <label className="text-xs font-bold block mb-2">
                 e-Money Number
@@ -349,8 +348,8 @@ export default function Form() {
           </div>
         )}
         {formik.values.payment == "cod" && (
-          <div className="w-[309px] flex justify-start items-center gap-x-6">
-            <div className="w-[20%]">
+          <div className="w-[309px] sm:w-[271px] sm:h-[250px] sm:flex-col flex justify-start items-center sm:justify-center sm:items-center gap-x-6 sm:gap-y-6">
+            <div className="w-[20%] sm:w-[271px]">
               <svg
                 width="48"
                 height="48"
@@ -366,8 +365,8 @@ export default function Form() {
                 />
               </svg>
             </div>
-            <div className="w-[80%]">
-              <p className="w-[554px] text-black/50">
+            <div className="w-[80%] sm:w-[271px]">
+              <p className="w-[554px] sm:w-full text-black/50">
                 The ‘Cash on Delivery’ option enables you to pay in cash when
                 our delivery courier arrives at your residence. Just make sure
                 your address is correct so that your order will not be

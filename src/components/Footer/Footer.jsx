@@ -5,7 +5,8 @@ export default function Footer() {
     <section className="bg-black pt-[75px] sm:pt-[52px] pb-[48px] sm:pb-[68px]">
       <div className="lg:max-w-[1110px] md:max-w-[689px] sm:max-w-[327px] w-[100%] m-auto flex lg:flex-row md:flex-col sm:md:flex-col relative justify-between sm:items-center">
         {/* Footer top decoration */}
-        <div className="absolute left-0 top-[-75px] h-1 w-[101px] bg-dark-salmon"></div>
+        <div className="absolute left-0 top-[-75px] sm:top-[-52px] sm:left-[34%] h-1 w-[101px] bg-dark-salmon"></div>
+        {/* Logo */}
         <div className="text-white/50 flex flex-col gap-y-[36px] lg:w-1/2 md:w-full pr-2 sm:items-center">
           <svg
             width="143"
@@ -25,7 +26,7 @@ export default function Footer() {
           <div className="flex-1 w-fit sm:w-full flex align-end flex-col items-end gap-y-24 lg:hidden md:block sm:block">
             <nav className="text-white sub-title flex justify-between gap-x-8 sm:flex-col sm:items-center sm:gap-y-[16px]">
               <Link
-                className="hover:text-dark-salmon ease-in-out duration-300"
+                className="hover:text-dark-salmon ease-in-out duration-300 sm:w-fit"
                 href={"/"}
               >
                 Home
@@ -114,8 +115,8 @@ export default function Footer() {
           </div>
         </div>
         {/* Tablet and Mobile footer icons */}
-        <div className="lg:hidden md:absolute sm:absolute bottom-0 right-0 sm:m-auto sm:right-[115px] sm:bottom-[-40px]">
-          <button className="pr-3 fb-icon ease-in-out duration-300">
+        <div className="lg:hidden md:absolute sm:absolute bottom-0 right-0 sm:m-auto sm:right-[90px] sm:bottom-[-50px]">
+          <button className="pr-3 sm:pr-8 fb-icon ease-in-out duration-300">
             <svg
               width="24"
               height="24"
@@ -123,7 +124,7 @@ export default function Footer() {
               xmlns="http://www.w3.org/2000/svg"
             ></svg>
           </button>
-          <button className="pr-3 twitter-icon ease-in-out duration-300">
+          <button className="pr-3 sm:pr-8 twitter-icon ease-in-out duration-300">
             <svg
               width="24"
               height="24"
@@ -131,7 +132,7 @@ export default function Footer() {
               xmlns="http://www.w3.org/2000/svg"
             ></svg>
           </button>
-          <button className="pr-3 insta-icon ease-in-out duration-300">
+          <button className="pr-3 sm:pr-8 insta-icon ease-in-out duration-300">
             <svg
               width="24"
               height="24"
