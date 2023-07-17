@@ -33,19 +33,19 @@ export default function Footer() {
               </Link>
               <Link
                 className="hover:text-dark-salmon ease-in-out duration-300"
-                href={"/"}
+                href={"/category/headphones"}
               >
                 Headphones
               </Link>
               <Link
                 className="hover:text-dark-salmon ease-in-out duration-300"
-                href={"/"}
+                href={"/category/speakers"}
               >
                 Speakers
               </Link>
               <Link
                 className="hover:text-dark-salmon ease-in-out duration-300"
-                href={"/"}
+                href={"/category/earphones"}
               >
                 Earphones
               </Link>
@@ -70,19 +70,19 @@ export default function Footer() {
             </Link>
             <Link
               className="hover:text-dark-salmon ease-in-out duration-300"
-              href={"/"}
+              href={"/category/headphones"}
             >
               Headphones
             </Link>
             <Link
               className="hover:text-dark-salmon ease-in-out duration-300"
-              href={"/"}
+              href={"/category/speakers"}
             >
               Speakers
             </Link>
             <Link
               className="hover:text-dark-salmon ease-in-out duration-300"
-              href={"/"}
+              href={"/category/earphones"}
             >
               Earphones
             </Link>

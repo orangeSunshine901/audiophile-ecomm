@@ -1,6 +1,5 @@
 import Image from "next/image"
 import React, { useContext, useState } from "react"
-import { data } from "@/app/category/[products]/data"
 import { CartContext } from "@/context/CartContext"
 import Link from "next/link"
 import { motion } from "framer-motion"

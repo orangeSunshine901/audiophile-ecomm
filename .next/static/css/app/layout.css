@@ -578,6 +578,18 @@ video {
 .top-\[88px\] {
   top: 88px;
 }
+.right-4 {
+  right: 1rem;
+}
+.top-2 {
+  top: 0.5rem;
+}
+.bottom-4 {
+  bottom: 1rem;
+}
+.right-\[-4px\] {
+  right: -4px;
+}
 .z-0 {
   z-index: 0;
 }
@@ -687,11 +699,17 @@ video {
 .h-4 {
   height: 1rem;
 }
-.h-auto {
-  height: auto;
+.h-\[10px\] {
+  height: 10px;
 }
-.h-\[40px\] {
-  height: 40px;
+.h-\[30px\] {
+  height: 30px;
+}
+.h-\[20px\] {
+  height: 20px;
+}
+.h-\[15px\] {
+  height: 15px;
 }
 .min-h-\[140px\] {
   min-height: 140px;
@@ -775,8 +793,17 @@ video {
 .w-4 {
   width: 1rem;
 }
-.w-\[40x\] {
-  width: 40x;
+.w-\[10px\] {
+  width: 10px;
+}
+.w-\[30px\] {
+  width: 30px;
+}
+.w-\[20px\] {
+  width: 20px;
+}
+.w-\[15px\] {
+  width: 15px;
 }
 .max-w-\[1110px\] {
   max-width: 1110px;
@@ -935,8 +962,8 @@ video {
 .rounded-md {
   border-radius: 0.375rem;
 }
-.rounded-lg {
-  border-radius: 0.5rem;
+.rounded-full {
+  border-radius: 9999px;
 }
 .rounded-b-md {
   border-bottom-right-radius: 0.375rem;
@@ -1124,6 +1151,9 @@ video {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-\[10px\] {
+  font-size: 10px;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -1183,11 +1213,11 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.duration-300 {
-  transition-duration: 300ms;
-}
 .duration-200 {
   transition-duration: 200ms;
+}
+.duration-300 {
+  transition-duration: 300ms;
 }
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1550,6 +1580,10 @@ input[type="radio"]:checked::before {
   background-color: rgb(251 175 133 / var(--tw-bg-opacity));
 }
 
+.hover\:text-black\/30:hover {
+  color: rgb(16 16 16 / 0.3);
+}
+
 .hover\:text-dark-salmon:hover {
   --tw-text-opacity: 1;
   color: rgb(216 125 74 / var(--tw-text-opacity));
@@ -1558,10 +1592,6 @@ input[type="radio"]:checked::before {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-black\/30:hover {
-  color: rgb(16 16 16 / 0.3);
 }
 
 .focus\:border-dark-salmon:focus {

@@ -1,16 +1,19 @@
 "use client"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
 import Link from "next/link"
 import Modal from "../Modal/Modal"
 import { usePathname } from "next/navigation"
 import { Squash as Hamburger } from "hamburger-react"
 import { AnimatePresence, motion } from "framer-motion"
 import Dropdown from "../Dropdown/Dropdown"
+import { CartContext } from "@/context/CartContext"
 
 export default function Header() {
   const pathName = usePathname()
   const [showModal, setShowModal] = useState(false)
   const [dropdown, setDropdown] = useState(false)
+
+  const { cart } = useContext(CartContext)
 
   // Cart modal
   const modalShow = () => {
@@ -118,8 +121,13 @@ export default function Header() {
                 !showModal ? setShowModal(true) : setShowModal(false)
               }
               disabled={pathName == "/checkout"}
-              className="disabled:opacity-30"
+              className="disabled:opacity-30 relative"
             >
+              {cart.length != 0 && (
+                <div className="w-[15px] h-[15px] block bg-dark-salmon absolute text-[10px] rounded-full text-white font-bold bottom-4 right-[-4px]">
+                  {cart.length}
+                </div>
+              )}
               <svg
                 width="24"
                 height="20"
