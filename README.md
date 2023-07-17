@@ -3,12 +3,12 @@
 
 <h2>Some of the library's used</h2>
 <ul>
-<li>Tailwind CSS<li>
-<li>Framer Motion<li>
-<li>Formik<li>
-<li>Yup<li>
-<li>React-Modal<li>
-<li>Hamburger-React<li>
+<li>Tailwind CSS
+<li>Framer Motion
+<li>Formik
+<li>Yup
+<li>React-Modal
+<li>Hamburger-React
 </ul>
 
 <a href="https://audiophile-ecomm-jet.vercel.app/">Link to the website 🎧</a>
