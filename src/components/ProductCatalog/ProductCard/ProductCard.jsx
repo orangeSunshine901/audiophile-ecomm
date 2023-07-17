@@ -14,6 +14,7 @@ export default function ProductCard({ product, index }) {
           <Image
             src={`${product.image.desktop}`}
             alt={product.name}
+            priority={true}
             className="lg:object-cover md:object-contain rounded-md m-auto"
             fill={true}
           />

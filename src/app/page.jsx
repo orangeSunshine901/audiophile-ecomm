@@ -154,6 +154,7 @@ export default function page() {
                 color={
                   "border-black border text-black hover:text-white hover:bg-black"
                 }
+                link={"category/speakers/yx1-earphones"}
               />
             </div>
           </div>

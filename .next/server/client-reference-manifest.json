@@ -56,94 +56,6 @@
         "async": false
       }
     },
-    "(app-client)/./public/home/desktop/container-2-bg.jpg": {
-      "*": {
-        "id": "(sc_client)/./public/home/desktop/container-2-bg.jpg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/home/desktop/container-3-img.jpg": {
-      "*": {
-        "id": "(sc_client)/./public/home/desktop/container-3-img.jpg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/home/desktop/image-hero.jpg": {
-      "*": {
-        "id": "(sc_client)/./public/home/desktop/image-hero.jpg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/home/desktop/image-speaker-zx9.png": {
-      "*": {
-        "id": "(sc_client)/./public/home/desktop/image-speaker-zx9.png",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/home/mobile/image-earphones-yx1.jpg": {
-      "*": {
-        "id": "(sc_client)/./public/home/mobile/image-earphones-yx1.jpg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/home/mobile/image-header.jpg": {
-      "*": {
-        "id": "(sc_client)/./public/home/mobile/image-header.jpg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/home/mobile/image-speaker-zx7.jpg": {
-      "*": {
-        "id": "(sc_client)/./public/home/mobile/image-speaker-zx7.jpg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/home/tablet/image-earphones-yx1.jpg": {
-      "*": {
-        "id": "(sc_client)/./public/home/tablet/image-earphones-yx1.jpg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/home/tablet/image-header.jpg": {
-      "*": {
-        "id": "(sc_client)/./public/home/tablet/image-header.jpg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/home/tablet/image-speaker-zx7.jpg": {
-      "*": {
-        "id": "(sc_client)/./public/home/tablet/image-speaker-zx7.jpg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/shared/desktop/image-best-gear.jpg": {
-      "*": {
-        "id": "(sc_client)/./public/shared/desktop/image-best-gear.jpg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./public/shared/desktop/image-category-thumbnail-earphones.png": {
       "*": {
         "id": "(sc_client)/./public/shared/desktop/image-category-thumbnail-earphones.png",
@@ -168,14 +80,6 @@
         "async": false
       }
     },
-    "(app-client)/./public/shared/tablet/image-best-gear.jpg": {
-      "*": {
-        "id": "(sc_client)/./public/shared/tablet/image-best-gear.jpg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./node_modules/next/dist/client/image.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
@@ -195,30 +99,6 @@
     "(app-client)/./node_modules/next/dist/shared/lib/head.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./src/app/page.jsx": {
-      "*": {
-        "id": "(sc_client)/./src/app/page.jsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./src/components/Buttons/ButtonOne.jsx": {
-      "*": {
-        "id": "(sc_client)/./src/components/Buttons/ButtonOne.jsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./src/components/CategoryCards/CategoryCards.jsx": {
-      "*": {
-        "id": "(sc_client)/./src/components/CategoryCards/CategoryCards.jsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -251,6 +131,46 @@
     "(app-client)/./src/context/CartContext.js": {
       "*": {
         "id": "(sc_client)/./src/context/CartContext.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./public/shared/desktop/image-best-gear.jpg": {
+      "*": {
+        "id": "(sc_client)/./public/shared/desktop/image-best-gear.jpg",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./public/shared/tablet/image-best-gear.jpg": {
+      "*": {
+        "id": "(sc_client)/./public/shared/tablet/image-best-gear.jpg",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./src/components/CategoryCards/CategoryCards.jsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/CategoryCards/CategoryCards.jsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./src/app/category/[products]/[product]/page.jsx": {
+      "*": {
+        "id": "(sc_client)/./src/app/category/[products]/[product]/page.jsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./src/components/Buttons/ButtonOne.jsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/Buttons/ButtonOne.jsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -419,99 +339,11 @@
       ],
       "async": false
     },
-    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/public/home/desktop/container-2-bg.jpg": {
-      "id": "(app-client)/./public/home/desktop/container-2-bg.jpg",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/public/home/desktop/container-3-img.jpg": {
-      "id": "(app-client)/./public/home/desktop/container-3-img.jpg",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/public/home/desktop/image-hero.jpg": {
-      "id": "(app-client)/./public/home/desktop/image-hero.jpg",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/public/home/desktop/image-speaker-zx9.png": {
-      "id": "(app-client)/./public/home/desktop/image-speaker-zx9.png",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/public/home/mobile/image-earphones-yx1.jpg": {
-      "id": "(app-client)/./public/home/mobile/image-earphones-yx1.jpg",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/public/home/mobile/image-header.jpg": {
-      "id": "(app-client)/./public/home/mobile/image-header.jpg",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/public/home/mobile/image-speaker-zx7.jpg": {
-      "id": "(app-client)/./public/home/mobile/image-speaker-zx7.jpg",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/public/home/tablet/image-earphones-yx1.jpg": {
-      "id": "(app-client)/./public/home/tablet/image-earphones-yx1.jpg",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/public/home/tablet/image-header.jpg": {
-      "id": "(app-client)/./public/home/tablet/image-header.jpg",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/public/home/tablet/image-speaker-zx7.jpg": {
-      "id": "(app-client)/./public/home/tablet/image-speaker-zx7.jpg",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/public/shared/desktop/image-best-gear.jpg": {
-      "id": "(app-client)/./public/shared/desktop/image-best-gear.jpg",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
     "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/public/shared/desktop/image-category-thumbnail-earphones.png": {
       "id": "(app-client)/./public/shared/desktop/image-category-thumbnail-earphones.png",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/category/[products]/layout:static/chunks/app/category/[products]/layout.js"
       ],
       "async": false
     },
@@ -519,7 +351,7 @@
       "id": "(app-client)/./public/shared/desktop/image-category-thumbnail-headphones.png",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/category/[products]/layout:static/chunks/app/category/[products]/layout.js"
       ],
       "async": false
     },
@@ -527,15 +359,7 @@
       "id": "(app-client)/./public/shared/desktop/image-category-thumbnail-speakers.png",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/public/shared/tablet/image-best-gear.jpg": {
-      "id": "(app-client)/./public/shared/tablet/image-best-gear.jpg",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/category/[products]/layout:static/chunks/app/category/[products]/layout.js"
       ],
       "async": false
     },
@@ -543,7 +367,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/category/[products]/[product]/page:static/chunks/app/category/[products]/[product]/page.js"
       ],
       "async": false
     },
@@ -551,7 +375,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/category/[products]/[product]/page:static/chunks/app/category/[products]/[product]/page.js"
       ],
       "async": false
     },
@@ -559,7 +383,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/category/[products]/[product]/page:static/chunks/app/category/[products]/[product]/page.js"
       ],
       "async": false
     },
@@ -567,7 +391,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/category/[products]/[product]/page:static/chunks/app/category/[products]/[product]/page.js"
       ],
       "async": false
     },
@@ -575,7 +399,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/category/[products]/[product]/page:static/chunks/app/category/[products]/[product]/page.js"
       ],
       "async": false
     },
@@ -583,31 +407,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/src/app/page.jsx": {
-      "id": "(app-client)/./src/app/page.jsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/src/components/Buttons/ButtonOne.jsx": {
-      "id": "(app-client)/./src/components/Buttons/ButtonOne.jsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/src/components/CategoryCards/CategoryCards.jsx": {
-      "id": "(app-client)/./src/components/CategoryCards/CategoryCards.jsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/category/[products]/[product]/page:static/chunks/app/category/[products]/[product]/page.js"
       ],
       "async": false
     },
@@ -639,16 +439,52 @@
       "id": "(app-client)/./src/context/CartContext.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/category/[products]/[product]/page:static/chunks/app/category/[products]/[product]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/public/shared/desktop/image-best-gear.jpg": {
+      "id": "(app-client)/./public/shared/desktop/image-best-gear.jpg",
+      "name": "*",
+      "chunks": [
+        "app/category/[products]/layout:static/chunks/app/category/[products]/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/public/shared/tablet/image-best-gear.jpg": {
+      "id": "(app-client)/./public/shared/tablet/image-best-gear.jpg",
+      "name": "*",
+      "chunks": [
+        "app/category/[products]/layout:static/chunks/app/category/[products]/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/src/components/CategoryCards/CategoryCards.jsx": {
+      "id": "(app-client)/./src/components/CategoryCards/CategoryCards.jsx",
+      "name": "*",
+      "chunks": [
+        "app/category/[products]/layout:static/chunks/app/category/[products]/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/src/app/category/[products]/[product]/page.jsx": {
+      "id": "(app-client)/./src/app/category/[products]/[product]/page.jsx",
+      "name": "*",
+      "chunks": [
+        "app/category/[products]/[product]/page:static/chunks/app/category/[products]/[product]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/src/components/Buttons/ButtonOne.jsx": {
+      "id": "(app-client)/./src/components/Buttons/ButtonOne.jsx",
+      "name": "*",
+      "chunks": [
+        "app/category/[products]/[product]/page:static/chunks/app/category/[products]/[product]/page.js"
       ],
       "async": false
     }
   },
   "entryCSSFiles": {
-    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/src/app/page": {
-      "modules": [],
-      "files": []
-    },
     "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/src/app/layout": {
       "modules": [
         "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/src/app/globals.css",
@@ -657,6 +493,18 @@
       "files": [
         "static/css/app/layout.css"
       ]
+    },
+    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/src/app/category/layout": {
+      "modules": [],
+      "files": []
+    },
+    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/src/app/category/[products]/layout": {
+      "modules": [],
+      "files": []
+    },
+    "/Users/Latif11/Documents/Programming/audiophile-ecom/audiophile-ecommerce-website/starter-code/audiophile-ecomm/src/app/category/[products]/[product]/page": {
+      "modules": [],
+      "files": []
     }
   }
 }

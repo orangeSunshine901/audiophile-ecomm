@@ -61,6 +61,7 @@ export default function product({ params }) {
             <Image
               src={productItem[0].image.desktop}
               fill={true}
+              priority={true}
               alt={productItem[0].name}
               className="lg:object-cover md:object-contain rounded-md"
             />
