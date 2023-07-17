@@ -684,6 +684,15 @@ video {
 .h-full {
   height: 100%;
 }
+.h-4 {
+  height: 1rem;
+}
+.h-auto {
+  height: auto;
+}
+.h-\[40px\] {
+  height: 40px;
+}
 .min-h-\[140px\] {
   min-height: 140px;
 }
@@ -762,6 +771,12 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-4 {
+  width: 1rem;
+}
+.w-\[40x\] {
+  width: 40x;
 }
 .max-w-\[1110px\] {
   max-width: 1110px;
@@ -919,6 +934,9 @@ video {
 }
 .rounded-md {
   border-radius: 0.375rem;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 .rounded-b-md {
   border-bottom-right-radius: 0.375rem;
@@ -1167,6 +1185,9 @@ video {
 }
 .duration-300 {
   transition-duration: 300ms;
+}
+.duration-200 {
+  transition-duration: 200ms;
 }
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1539,6 +1560,10 @@ input[type="radio"]:checked::before {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-black\/30:hover {
+  color: rgb(16 16 16 / 0.3);
+}
+
 .focus\:border-dark-salmon:focus {
   --tw-border-opacity: 1;
   border-color: rgb(216 125 74 / var(--tw-border-opacity));
@@ -1665,6 +1690,10 @@ input[type="radio"]:checked::before {
     display: none;
   }
 
+  .sm\:h-\[100px\] {
+    height: 100px;
+  }
+
   .sm\:h-\[1100px\] {
     height: 1100px;
   }
@@ -1742,21 +1771,8 @@ input[type="radio"]:checked::before {
     height: fit-content;
   }
 
-  .sm\:h-\[100px\] {
-    height: 100px;
-  }
-
   .sm\:min-h-\[130vh\] {
     min-height: 130vh;
-  }
-
-  .sm\:min-h-fit {
-    min-height: -moz-fit-content;
-    min-height: fit-content;
-  }
-
-  .sm\:min-h-\[110px\] {
-    min-height: 110px;
   }
 
   .sm\:min-h-\[140px\] {
@@ -1810,10 +1826,6 @@ input[type="radio"]:checked::before {
 
   .sm\:max-w-full {
     max-width: 100%;
-  }
-
-  .sm\:flex-row {
-    flex-direction: row;
   }
 
   .sm\:flex-col {
@@ -1880,24 +1892,9 @@ input[type="radio"]:checked::before {
     border-radius: 0.375rem;
   }
 
-  .sm\:rounded-t-md {
-    border-top-left-radius: 0.375rem;
-    border-top-right-radius: 0.375rem;
-  }
-
   .sm\:rounded-b-md {
     border-bottom-right-radius: 0.375rem;
     border-bottom-left-radius: 0.375rem;
-  }
-
-  .sm\:rounded-r-none {
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-
-  .sm\:rounded-b-none {
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
   }
 
   .sm\:rounded-t-none {
@@ -1937,6 +1934,10 @@ input[type="radio"]:checked::before {
   .sm\:py-\[64px\] {
     padding-top: 64px;
     padding-bottom: 64px;
+  }
+
+  .sm\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .sm\:pb-2 {
@@ -2001,10 +2002,6 @@ input[type="radio"]:checked::before {
 
   .sm\:pt-\[52px\] {
     padding-top: 52px;
-  }
-
-  .sm\:pb-0 {
-    padding-bottom: 0px;
   }
 
   .sm\:text-center {

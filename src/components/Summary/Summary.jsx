@@ -63,7 +63,7 @@ export default function Summary() {
         </div>
       </div>
       <motion.button
-        className="mt-8 bg-dark-salmon text-white font-bold uppercase w-full h-[48px] text-[13px] tracking-[1px] disabled:opacity-50 hover:bg-salmon ease-in-out duration-300"
+        className="mt-8 bg-dark-salmon text-white font-bold uppercase w-full h-[48px] text-[13px] tracking-[1px] disabled:opacity-50 hover:bg-salmon"
         form="checkout-form"
         type="submit"
         disabled={cart.length == 0}

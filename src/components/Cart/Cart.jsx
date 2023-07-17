@@ -23,13 +23,15 @@ export default function Cart({ closeCart }) {
         <h6>
           Cart <span>({cart.length})</span>
         </h6>
-        <button
+        <motion.button
+          whileHover={{ scale: 1.05, transition: { duration: 0.1 } }}
+          whileTap={{ scale: 0.95, transition: { duration: 0.1 } }}
           onClick={clearCart}
-          className="text-black/25 underline disabled:text-black/0 hover:text-dark-salmon ease-in-out duration-300"
+          className="text-black/25 underline disabled:text-black/0 hover:text-dark-salmon"
           disabled={cart.length == 0}
         >
           Remove all
-        </button>
+        </motion.button>
       </div>
       <ul>
         {cart.length == 0 ? (
@@ -57,7 +59,7 @@ export default function Cart({ closeCart }) {
               </div>
               <div className="w-[96px] h-[32px] bg-grey flex items-center">
                 <button
-                  className="flex-1 text-black/25 hover:text-dark-salmon ease-in-out duration-300"
+                  className="flex-1 text-black/25 hover:text-dark-salmon ease-in-out duration-200"
                   onClick={() =>
                     item.quantity > 1
                       ? subtractQuantity(item.id)
@@ -69,7 +71,7 @@ export default function Cart({ closeCart }) {
                 </button>
                 <p className="flex-1 text-center">{item.quantity}</p>
                 <button
-                  className="flex-1 text-black/25 hover:text-dark-salmon ease-in-out duration-300"
+                  className="flex-1 text-black/25 hover:text-dark-salmon ease-in-out duration-200"
                   onClick={(e) => addQuantity(item.id)}
                 >
                   +

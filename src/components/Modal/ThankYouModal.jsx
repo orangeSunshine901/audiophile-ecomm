@@ -143,7 +143,7 @@ const ThankYouModal = ({ showModal, modelState }) => {
                 <div className="border-t border-gray w-full">
                   {cart.length > 1 && (
                     <button
-                      className="block py-2 w-fit m-auto font-bold text-black/50 text-[12px]"
+                      className="block py-2 w-fit m-auto font-bold text-black/50 text-[12px] hover:text-black/30"
                       onClick={() =>
                         !seeMore ? setSeeMore(true) : setSeeMore(false)
                       }
@@ -168,7 +168,7 @@ const ThankYouModal = ({ showModal, modelState }) => {
             </div>
             <Link href="/">
               <motion.button
-                className="mt-4 bg-dark-salmon text-white font-bold uppercase w-full h-[48px] text-[13px] tracking-[1px] disabled:opacity-50 hover:bg-salmon ease-in-out duration-300"
+                className="mt-4 bg-dark-salmon text-white font-bold uppercase w-full h-[48px] text-[13px] tracking-[1px] disabled:opacity-50 hover:bg-salmon"
                 form="checkout-form"
                 type="submit"
                 onClick={() => clearCart()}

@@ -2,6 +2,7 @@ import React from "react"
 import { useRef } from "react"
 import Link from "next/link"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 export default function CategoryCard({
   image,
@@ -38,7 +39,9 @@ export default function CategoryCard({
         className={`w-full bg-grey lg:h-[204px] md:h-[165px] sm:h-[165px] flex flex-col items-center justify-end pb-[30px] gap-y-[12px] rounded-md`}
       >
         <h6>{category}</h6>
-        <button
+        <motion.button
+          whileHover={{ scale: 1.05, transition: { duration: 0.1 } }}
+          whileTap={{ scale: 0.95, transition: { duration: 0.1 } }}
           ref={onHover}
           className={`sub-title flex items-center gap-x-3 ease-in-out duration-300 text-black/50 cursor-auto`}
         >
@@ -58,7 +61,7 @@ export default function CategoryCard({
               />
             </svg>
           </span>
-        </button>
+        </motion.button>
       </div>
     </Link>
   )

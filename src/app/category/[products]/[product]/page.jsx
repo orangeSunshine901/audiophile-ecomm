@@ -36,7 +36,17 @@ export default function product({ params }) {
   }
 
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, x: -10 }}
+      animate={{
+        opacity: 1,
+        x: 0,
+        transition: {
+          duration: 0.8,
+        },
+      }}
+      exit={{ opacity: 0, x: 10 }}
+    >
       {/* Product section */}
       <div className="lg:h-[97px] md:h-[89px] sm:h-[89px] bg-black mb-[79px] sm:mb-[16px]"></div>
       <section className="lg:w-[1110px] md:w-[689px] sm:w-[327px] m-auto lg:pb-[160px] md:pb-[120px] sm:pb-[88px]">
@@ -87,7 +97,7 @@ export default function product({ params }) {
                 </button>
               </div>
               <motion.button
-                className="bg-dark-salmon text-white h-[48px] w-[160px] uppercase sub-title hover:bg-salmon ease-in-out duration-300"
+                className="bg-dark-salmon text-white h-[48px] w-[160px] uppercase sub-title hover:bg-salmon"
                 onClick={handleCart}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -176,6 +186,6 @@ export default function product({ params }) {
           ))}
         </div>
       </section>
-    </div>
+    </motion.div>
   )
 }

@@ -1,3 +1,5 @@
+"use client"
+
 // Home Page
 import Image from "next/image"
 import React from "react"
@@ -13,12 +15,26 @@ import containerTwoBgMobile from "public/home/mobile/image-speaker-zx7.jpg"
 import containerThreeImg from "public/home/desktop/container-3-img.jpg"
 import containerThreeImgTablet from "public/home/tablet/image-earphones-yx1.jpg"
 import containerThreeImgMobile from "public/home/mobile/image-earphones-yx1.jpg"
-
 import AboutSection from "@/components/AboutSection/AboutSection"
+import { motion } from "framer-motion"
 
 export default function page() {
   return (
-    <div id="bodyOne">
+    <motion.div
+      initial={{
+        opacity: 0,
+        y: -40,
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          duration: 0.8,
+          ease: [0, 0.71, 0.2, 1.01],
+        },
+      }}
+      exit={{ opacity: 0, x: 20 }}
+    >
       <section className="relative h-[729px] sm:h-[600px] flex flex-col items-center justify-center">
         <Image
           className="absolute z-0 object-cover h-[729px] top-0 md:hidden lg:block sm:hidden"
@@ -50,9 +66,7 @@ export default function page() {
           </p>
           <ButtonOne
             link={"category/headphones/xx99-mark-two-headphones"}
-            color={
-              "bg-dark-salmon text-white hover:bg-salmon ease-in-out duration-300"
-            }
+            color={"bg-dark-salmon text-white hover:bg-salmon"}
           />
         </div>
       </section>
@@ -77,9 +91,7 @@ export default function page() {
             </p>
             <ButtonOne
               link={"category/speakers/zx9-speaker"}
-              color={
-                "bg-black text-white hover:bg-[#4C4C4C] ease-in-out duration-300"
-              }
+              color={"bg-black text-white hover:bg-[#4C4C4C]"}
             />
           </div>
         </div>
@@ -90,7 +102,7 @@ export default function page() {
             <ButtonOne
               link={"category/speakers/zx7-speaker"}
               color={
-                "border-black border text-black hover:text-white hover:bg-black ease-in-out duration-300"
+                "border-black border text-black hover:text-white hover:bg-black"
               }
             />
           </div>
@@ -140,7 +152,7 @@ export default function page() {
               <h4>YX1 Earphones</h4>
               <ButtonOne
                 color={
-                  "border-black border text-black hover:text-white hover:bg-black ease-in-out duration-300"
+                  "border-black border text-black hover:text-white hover:bg-black"
                 }
               />
             </div>
@@ -149,6 +161,6 @@ export default function page() {
       </section>
 
       <AboutSection />
-    </div>
+    </motion.div>
   )
 }

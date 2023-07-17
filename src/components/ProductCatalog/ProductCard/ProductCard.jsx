@@ -29,9 +29,7 @@ export default function ProductCard({ product, index }) {
             {product.description}
           </p>
           <ButtonOne
-            color={
-              "bg-dark-salmon text-white hover:bg-salmon ease-in-out duration-300"
-            }
+            color={"bg-dark-salmon text-white hover:bg-salmon"}
             link={`category/${product.category}/${product.slug}`}
           />
         </div>

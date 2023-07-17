@@ -5,6 +5,7 @@ import { useEffect, useState } from "react"
 import Summary from "@/components/Summary/Summary"
 import Form from "@/components/Form/Form"
 import { usePathname, useSearchParams } from "next/navigation"
+import { motion } from "framer-motion"
 
 export default function checkout() {
   const pathName = usePathname()
@@ -18,7 +19,18 @@ export default function checkout() {
   }, [])
 
   return (
-    <div className="bg-grey">
+    <motion.div
+      initial={{ opacity: 0, x: -10 }}
+      animate={{
+        opacity: 1,
+        x: 0,
+        transition: {
+          duration: 0.8,
+        },
+      }}
+      exit={{ opacity: 0, x: 10 }}
+      className="bg-grey"
+    >
       <div className="lg:h-[97px] md:h-[89px] sm:h-[89px] bg-black"></div>
       <section className="flex lg:w-[1110px] md:w-[689px] sm:w-[327px] m-auto font-medium flex-col">
         <Link
@@ -37,6 +49,6 @@ export default function checkout() {
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   )
 }

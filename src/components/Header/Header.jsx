@@ -4,7 +4,7 @@ import Link from "next/link"
 import Modal from "../Modal/Modal"
 import { usePathname } from "next/navigation"
 import { Squash as Hamburger } from "hamburger-react"
-import { AnimatePresence } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
 import Dropdown from "../Dropdown/Dropdown"
 
 export default function Header() {
@@ -108,7 +108,12 @@ export default function Header() {
           </div>
           {/*Shopping Cart */}
           <div>
-            <button
+            <motion.button
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.1 },
+              }}
+              whileTap={{ scale: 0.95, transition: { duration: 0.1 } }}
               onClick={() =>
                 !showModal ? setShowModal(true) : setShowModal(false)
               }
@@ -129,7 +134,7 @@ export default function Header() {
                   fill="white"
                 />
               </svg>
-            </button>
+            </motion.button>
           </div>
         </nav>
       </header>
